@@ -2,7 +2,6 @@
 datab = {"AA123BB" : [("Giugno", 9, 1293), ("Luglio", 7, 3231), ("Agosto", 7, 4020), ("Settembre", 6, 3928)], "AB345CD" : [("Giugno", 8, 1391), ("Luglio", 6, 1234), ("Agosto", 9, 4932), ("Settembre", 8, 2872)], "CD456FF" : [("Giugno", 7, 2872), ("Luglio", 6, 3273), ("Agosto", 4, 3211), ("Settembre", 8, 2827)]}
 
 #Aggiungi i dati di un nuovo noleggio con targa ZZ999CN, (CN iniziali del tuo Cognome Nome) con 10 noleggi in ogni mese e 1000*N km per ogni mese (N il tuo numero di registro).
-
 datab["ZZ999KA"] = [("Giugno", 10, 13000), ("Luglio", 10, 13000), ("Agosto", 10, 13000), ("Settembre", 10, 13000)]
 
 #Stampa la tupla con tutte le informazioni sul mese di Luglio per la targa AA123BB
