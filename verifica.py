@@ -124,6 +124,32 @@ for chiave in diz.keys():
 
 print(f"Il tempo medio di completamento è stato di: " + str(int(minutiTot/giocatoriTot)) + ":" + str(int(secondiTot/giocatoriTot)) + ":" + str(int(millisecTot/giocatoriTot)))
 
+#V2 (ERRATA)
+print("---Punto 9 - V2 (ERRATA)---")
+
+tempoTot = 0
+tempoMedioMs = 0
+tempoMedioS = 0
+tempoMedioMin = 0
+for chiave in diz.keys():
+  tempo = 0
+  if diz[chiave][0][2] == "Allievi":
+    tempoTot += diz[chiave][0][1][0]*60*1000
+    tempoTot += diz[chiave][0][1][1]*60
+    tempoTot += diz[chiave][0][1][2]
+    giocatoriTot += 1
+
+tempoMedio =  int(tempoTot/giocatoriTot)
+while tempoMedio >= 1000:
+  tempoMedio -= 1000
+  tempoMedioS += 1
+while tempoMedio >= 60:
+  tempoMedio -= 60
+  tempoMedioMin += 1
+tempoMedioMs = tempoMedio
+
+
+print(f"Il tempo medio è stato di {tempoMedioMin} : {tempoMedioS} : {tempoMedioMs}")
 
 #10. Realizzare le opportune funzioni per aggiungere al dizionario i dati validi relativi alle 4 gare per un atleta.
 print("---Punto 10 || EXTRA ---")
